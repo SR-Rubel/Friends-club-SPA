@@ -1,0 +1,48 @@
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variable';
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:$body-font;
+}
+
+.head__custom-nav{
+    .navbar-brand{
+        img{
+            width: 100px;
+        }
+        span{
+            font-size:1.5rem;
+            font-weight: $font-semi;
+        }
+    }
+    #navbarNav{
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    font-weight: 800;
+                    padding: 8px 15px;
+                    white-space: nowrap;
+                    transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+                    &:hover{
+                        transform: scale(1.01);
+                        color:$first-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.custom-section{
+    img{
+        height: 500px;
+    }
+}
+.about{
+    height: 100vh;
+}
